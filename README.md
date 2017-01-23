@@ -2,7 +2,7 @@
 
 ### Level 1
 
-Students will build a simple Journal app to practice MVC separation, protocols, master-detail interfaces, table views, and persistence. 
+Students will build a simple Journal app to practice MVC separation, protocols, master-detail interfaces, table views, and persistence.
 
 Journal is an excellent app to practice basic Cocoa Touch princples and design patterns. Students are encouraged to repeat building Journal regularly until the principles and patterns are internalized and the student can build Journal without a guide.
 
@@ -41,7 +41,6 @@ Create an ```Entry``` model class that will hold a title, text, and timestamp fo
 1. Add a new ```Entry``` class as an ```NSObject``` subclass
 2. Add properties for timestamp, title, and body text
 3. Add a memberwise initializer that takes parameters for each property
-    * note: Consider setting a default parameter value for timestamp.
 
 ### EntryController
 
@@ -52,7 +51,7 @@ Create a model object controller called ```EntryController``` that will manage a
 3. Create a ```- (void)addEntry:(Entry *)entry``` method that adds the entry parameter to the entries array
 4. Create a ```- (void)removeEntry:(Entry *)entry``` method that removes the entry from the entries array
     * note: Look at the ```NSArray``` documentation to find how to remove objects
-5. Create a sharedController property as a shared instance. 
+5. Create a sharedController property as a shared instance.
     * note: Review the syntax for creating shared instance properties
 
 ```
@@ -77,7 +76,7 @@ Create a model object controller called ```EntryController``` that will manage a
 
 Build a view that lists all journal entries. You will use a UITableViewController and implement the UITableViewDataSource methods.
 
-The UITableViewController subclass template comes with a lot of boilerplate and commented code. For readability, please remove all unused boilerplate from your code. 
+The UITableViewController subclass template comes with a lot of boilerplate and commented code. For readability, please remove all unused boilerplate from your code.
 
 You will want this view to reload the table view each time it appears in order to display newly created entries.
 
@@ -136,7 +135,7 @@ You will add two separate segues from the List View to the Detail View. The segu
 
 ## Part Three - Controller Implementation
 
-You will use NSUserDefaults to add basic data persistence to the Journal app. 
+You will use NSUserDefaults to add basic data persistence to the Journal app.
 
 ### Add Factory Functions to Entry
 
