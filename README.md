@@ -1,4 +1,4 @@
-# Journal-C
+# Journal-C 
 
 ### Level 1
 
@@ -10,11 +10,11 @@ Students who complete this project independently are able to:
 
 ### Part One - Model Objects and Controllers
 
-* understand basic model-view-controller design and implementation
-* create a custom model object with a memberwise initializer
-* understand, create, and use a shared instance
-* create a model object controller with create, update, and delete methods
-* implement the Equatable protocol
+* understand basic model-view-controller design and implementations.
+* create a custom model object with a memberwise initializer.
+* understand, create, and use a shared instance.
+* create a model object controller with create, update, and delete methods.
+* implement the Equatable protocol.
 
 ### Part Two - User Interface
 
@@ -65,7 +65,7 @@ Create a model object controller called ```EntryController``` that will manage a
 }
 ```
 
-## Part Two - User Interface
+## Part Two - User Interface(UI)
 
 ### Master List View
 
@@ -81,7 +81,7 @@ You will want this view to reload the table view each time it appears in order t
     * note: Pay attention to your ```reuseIdentifier``` in the Storyboard scene and your dequeue method call
 4. Set up your cells to display the title of the entry
 5. Implement the UITableViewDataSource ```commitEditingStyle``` methods to enable swipe to delete methodality
-6. Add a UIBarButtonItem to the UINavigationBar with the plus symbol
+6. Add a UIBarButtonItem to the UINavigationBar with the plus symbol(+)
     * note: Select 'Add' in the System Item menu from the Identity Inspector to set the button as a plus symbol, these are system bar button items, and include localization and other benefits
 
 ### Detail View
@@ -156,9 +156,9 @@ Our EntryController object is the source of truth for entries. We are now adding
 2. Write a method called ```- (void)loadFromPersistentStorage``` that will load saved dictionary entries from NSUserDefaults and set self.entries to the results
     * note: Use the Entry ```initWithDictionary(NSDictionary *)dictionary``` while looping through the array to turn the dictionaries into Entry class objects
 
-3. Call the ```- (void)loadFromPersistentStorage``` method when the ```EntryController``` is initialized
+3. Call the ```- (void)loadFromPersistentStorage``` method when the ```EntryController``` is initialized.
 
-4. Call the ```- (void)saveToPersistentStorage``` any time that the list of entries is modified
+4. Call the ```- (void)saveToPersistentStorage``` any time that the list of entries is modified.
 
 ## Contributions
 
